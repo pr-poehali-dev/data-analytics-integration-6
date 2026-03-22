@@ -15,7 +15,7 @@ export default function CasePage() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-white" style={{ color: '#0a0a0a' }}>
       <div className="container py-12 md:py-20 max-w-2xl mx-auto">
         <Link
           to="/"
