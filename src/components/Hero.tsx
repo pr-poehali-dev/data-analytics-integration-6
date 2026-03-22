@@ -13,10 +13,9 @@ export function Hero() {
       <Header />
 
       <div className="pb-16 mt-auto text-center relative">
-        <Pill className="mb-6">НОВЫЙ ФОРМАТ</Pill>
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-sentient">
-          Выступай. Вдохновляй. <br />
-          <i className="font-light">Побеждай</i> аудиторию
+          Самые вредные <br />
+          <i className="font-light">достижения</i> человечества
         </h1>
         <p className="font-mono text-sm sm:text-base text-foreground/60 text-balance mt-8 max-w-[440px] mx-auto">
           Платформа для создания и проведения мощных презентаций и публичных выступлений
