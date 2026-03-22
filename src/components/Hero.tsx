@@ -18,7 +18,7 @@ export function Hero() {
           <i className="font-light">достижения</i> человечества
         </h1>
         <p className="font-mono text-sm sm:text-base text-foreground/60 text-balance mt-8 max-w-[440px] mx-auto">
-          Какие же достижения человечества относятся к вредным
+          Какие же достижения человечества относятся к вредным?
         </p>
 
         <a className="contents max-sm:hidden" href="#start">
