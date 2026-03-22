@@ -4,7 +4,7 @@ import Icon from "@/components/ui/icon";
 
 export function Cases() {
   return (
-    <section id="cases" className="relative z-10 py-24 md:py-36 container">
+    <section id="cases" className="relative z-10 py-24 md:py-36 container bg-white rounded-2xl" style={{ color: '#0a0a0a' }}>
       <p className="font-mono text-xs uppercase text-foreground/40 tracking-widest mb-6">
         Кейсы
       </p>
