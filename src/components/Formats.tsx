@@ -54,7 +54,7 @@ export function Formats() {
               onClick={() => setOpenIndex(isOpen ? null : index)}
             >
               <div className="p-8 md:p-10">
-                <div className="flex items-start justify-between gap-4">
+                <div className="flex flex-col items-center text-center gap-4">
                   <div>
                     <div className="text-3xl mb-5">{cat.emoji}</div>
                     <h3 className={`font-sentient text-xl md:text-2xl mb-4 transition-colors duration-300 ${isOpen ? "text-primary" : ""}`}>
@@ -64,7 +64,7 @@ export function Formats() {
                       {cat.items.map((item) => (
                         <li
                           key={item}
-                          className="font-mono text-sm text-foreground/50 flex items-center gap-2"
+                          className="font-mono text-sm text-foreground/50 flex items-center justify-center gap-2"
                         >
                           <span className="w-1 h-1 rounded-full bg-foreground/30 inline-block" />
                           {item}
@@ -72,7 +72,7 @@ export function Formats() {
                       ))}
                     </ul>
                   </div>
-                  <div className={`mt-1 shrink-0 text-foreground/40 transition-transform duration-300 ${isOpen ? "rotate-180 text-primary" : ""}`}>
+                  <div className={`shrink-0 text-foreground/40 transition-transform duration-300 ${isOpen ? "rotate-180 text-primary" : ""}`}>
                     <Icon name="ChevronDown" size={20} />
                   </div>
                 </div>
