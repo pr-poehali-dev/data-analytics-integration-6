@@ -1,8 +1,8 @@
 import { GL } from "./gl";
-import { Pill } from "./Pill";
 import { Button } from "./ui/button";
 import { useState } from "react";
 import { Header } from "./Header";
+import Icon from "./ui/icon";
 
 export function Hero() {
   const [hovering, setHovering] = useState(false);
@@ -21,23 +21,15 @@ export function Hero() {
           Какие же достижения человечества относятся к вредным?
         </p>
 
-        <a className="contents max-sm:hidden" href="#start">
+        <a className="inline-block mt-14" href="#start">
           <Button
-            className="mt-14"
+            variant="outline"
+            size="icon"
+            className="rounded-full w-12 h-12"
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
           >
-            [Начать выступление]
-          </Button>
-        </a>
-        <a className="contents sm:hidden" href="#start">
-          <Button
-            size="sm"
-            className="mt-14"
-            onMouseEnter={() => setHovering(true)}
-            onMouseLeave={() => setHovering(false)}
-          >
-            [Начать выступление]
+            <Icon name="ArrowDown" size={20} />
           </Button>
         </a>
       </div>
