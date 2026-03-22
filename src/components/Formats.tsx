@@ -41,7 +41,7 @@ export function Formats() {
         Категории
       </p>
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-sentient mb-16 max-w-xl">
-        Форматы <i className="font-light">выступлений</i>
+        Форматы <i className="font-light text-primary">выступлений</i>
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -56,15 +56,15 @@ export function Formats() {
               <div className="p-8 md:p-10">
                 <div className="flex flex-col items-center text-center gap-4">
                   <div>
-                    <div className="text-3xl mb-5">{cat.emoji}</div>
-                    <h3 className={`font-sentient text-xl md:text-2xl mb-4 transition-colors duration-300 ${isOpen ? "text-primary" : ""}`}>
+                    <div className="text-5xl mb-6">{cat.emoji}</div>
+                    <h3 className={`font-sentient text-2xl md:text-3xl mb-5 transition-colors duration-300 ${isOpen ? "text-primary" : ""}`}>
                       {cat.title}
                     </h3>
-                    <ul className="space-y-2">
+                    <ul className="space-y-3">
                       {cat.items.map((item) => (
                         <li
                           key={item}
-                          className="font-mono text-sm text-foreground/50 flex items-center justify-center gap-2"
+                          className="font-mono text-base text-foreground/80 flex items-center justify-center gap-2"
                         >
                           <span className="w-1 h-1 rounded-full bg-foreground/30 inline-block" />
                           {item}
