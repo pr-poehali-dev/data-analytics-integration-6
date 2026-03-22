@@ -21,7 +21,7 @@ export function Hero() {
           Какие же достижения человечества относятся к вредным?
         </p>
 
-        <a className="inline-block mt-14" href="#start">
+        <a className="inline-block mt-14 animate-bounce" href="#start">
           <Button
             variant="outline"
             size="icon"
