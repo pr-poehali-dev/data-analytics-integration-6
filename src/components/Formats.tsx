@@ -44,13 +44,13 @@ export function Formats() {
         Форматы <i className="font-light">выступлений</i>
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-px border border-border">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {categories.map((cat, index) => {
           const isOpen = openIndex === index;
           return (
             <div
               key={cat.title}
-              className="border border-border transition-colors duration-300 cursor-pointer hover:bg-white/5"
+              className="border border-border rounded-full transition-colors duration-300 cursor-pointer hover:bg-white/5"
               onClick={() => setOpenIndex(isOpen ? null : index)}
             >
               <div className="p-8 md:p-10">
