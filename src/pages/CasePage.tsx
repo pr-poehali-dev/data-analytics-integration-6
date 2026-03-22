@@ -43,6 +43,21 @@ export default function CasePage() {
 
         <div className="w-12 h-px bg-border mb-12" />
 
+        {item.image && (
+          <figure className="mb-10">
+            <img
+              src={item.image}
+              alt={item.imageCaption ?? item.title}
+              className="w-full rounded-xl object-cover max-h-[480px] grayscale"
+            />
+            {item.imageCaption && (
+              <figcaption className="font-mono text-xs text-foreground/40 mt-3 text-center">
+                {item.imageCaption}
+              </figcaption>
+            )}
+          </figure>
+        )}
+
         <div className="space-y-6">
           {item.body.map((paragraph, i) => (
             <p key={i} className="font-mono text-sm text-foreground/70 leading-relaxed">
